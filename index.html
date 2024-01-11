@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Universitas XYZ Survey Form</h1>
+        <p id="description" class="description text-center">
+          Terimakasih telah meluangkan waktu untuk membantu kami meningkatkan kualitas
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Nama</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Masukkan nama kamu"
+            required 
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input 
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Masukkan email kamu"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Umur<span class="clue">(optional)</span></label>
+          <input 
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Umur"
+          />
+        </div>
+        <div class="form-group">
+          <p>Yang mana Program Studi Kamu?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Pilih Program Studi Kamu</option>
+            <option value="tik">Teknik Informatika</option>
+            <option value="si">Sistem Informasi</option>
+            <option value="tin">Teknik Industri</option>
+            <option value="te">Teknik Elektro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Pilih Semester Kamu</p>
+          <label>
+            <input
+              name="semester"
+              value="1"
+              type="radio"
+              class="input-radio"
+              checked
+            />1</label
+          >
+          <label>
+            <input
+              name="semester"
+              value="2"
+              type="radio"
+              class="input-radio"
+            />2</label
+          >
+
+          <label
+            ><input
+              name="semester"
+              value="3"
+              type="radio"
+              class="input-radio"
+            />3</label
+          >
+
+          <label
+            ><input
+              name="semester"
+              value="4"
+              type="radio"
+              class="input-radio"
+            />4</label
+          >
+
+          <label
+            ><input
+              name="semester"
+              value="5"
+              type="radio"
+              class="input-radio"
+            />5</label
+          >
+
+          <label
+            ><input
+              name="semester"
+              value="6"
+              type="radio"
+              class="input-radio"
+            />6</label
+          >
+
+          <label
+            ><input
+              name="semester"
+              value="7"
+              type="radio"
+              class="input-radio"
+            />7</label
+          >
+
+          <label
+            ><input
+              name="semester"
+              value="8"
+              type="radio"
+              class="input-radio"
+            />8</label
+          >
+
+          <label
+            ><input
+              name="semester"
+              value="other"
+              type="radio"
+              class="input-radio"
+            />lainnya</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Kegiatan yang kamu sukai?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Pilih peminatan</option>
+            <option value="design">Design</option>
+            <option value="coding">Coding</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            Bahasa Pemrograman yang kamu ingin kuasai?
+            <span class="clue">(Centang semua yang sesuai)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="html"
+              type="checkbox"
+              class="input-checkbox"
+            />HTML</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="javascript"
+              type="checkbox"
+              class="input-checkbox"
+            />Javascript</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="phyton"
+              type="checkbox"
+              class="input-checkbox"
+            />Phyton</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="c++"
+              type="checkbox"
+              class="input-checkbox"
+            />C++</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="java"
+              type="checkbox"
+              class="input-checkbox"
+            />Java</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="swift"
+              type="checkbox"
+              class="input-checkbox"
+            />Swift</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="SQL"
+              type="checkbox"
+              class="input-checkbox"
+            />SQL</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Ada saran dan kritik?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Silakan tulis kritik dan saran..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
